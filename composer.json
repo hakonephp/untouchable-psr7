@@ -1,0 +1,21 @@
+{
+    "name": "hakone/untouchable-psr7",
+    "description": "PSR-7 message implementation with all method calls restricted",
+    "license": "Apache-2.0",
+    "require": {
+        "psr/http-message": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-strict-rules": "^1.5",
+        "symplify/easy-coding-standard": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hakone\\Http\\Message\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

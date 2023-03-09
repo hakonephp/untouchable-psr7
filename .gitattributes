@@ -1,0 +1,3 @@
+/.editorconfig export-ignore
+/ecs.php export-ignore
+/phpstan.dist.neon export-ignore
