@@ -1,6 +1,6 @@
 <?php
 
-namespace Hakone\Http\Message;
+namespace Hakone\Http\Message\Helper;
 
 use BadMethodCallException;
 use Psr\Http\Message\StreamInterface;
