@@ -2,74 +2,113 @@
 
 namespace Hakone\Http\Message\Helper;
 
-use BadMethodCallException;
+use Hakone\Http\Message\Exception\DoNotCallMethodException;
 use Psr\Http\Message\StreamInterface;
 
+/**
+ * This trait is imported for the purpose of disabling request and response objects.
+ *
+ * If you are a middleware user, it would be inappropriate to put it as part of Request Interceptor.
+ * If you are a middleware developer, you should not call Response object methods in this context.
+ */
 trait UntouchableMessageTrait
 {
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function getProtocolVersion()
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function withProtocolVersion($version)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function getHeaders()
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function hasHeader($name)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function getHeader($name)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function getHeaderLine($name)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function withHeader($name, $value)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function withAddedHeader($name, $value)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function withoutHeader($name)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function getBody()
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 
-    /** @return never */
+    /**
+     * @throws DoNotCallMethodException
+     * @return never
+     */
     public function withBody(StreamInterface $body)
     {
-        throw new BadMethodCallException();
+        throw new DoNotCallMethodException('Untouchable method called in wrong context.');
     }
 }
