@@ -3,6 +3,7 @@
     "description": "PSR-7 message implementation with all method calls restricted",
     "license": "Apache-2.0",
     "require": {
+        "php": "^8.2",
         "psr/http-message": "^2.0"
     },
     "require-dev": {
