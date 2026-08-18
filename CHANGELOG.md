@@ -10,8 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
-- The minimum supported PHP version is now 8.2.
-- GitHub source archives now exclude development files and only ship `LICENSE`, `README.md`, `composer.json`, and `src/`.
+- The minimum supported PHP version is now 8.2 ([#1](https://github.com/hakonephp/untouchable-psr7/pull/1)).
+- GitHub source archives now exclude development files and only ship `LICENSE`, `README.md`, `composer.json`, and `src/` ([#1](https://github.com/hakonephp/untouchable-psr7/pull/1)).
 
 [Unreleased]: https://github.com/hakonephp/untouchable-psr7/compare/1.1.0...HEAD
 [1.1.0]: https://github.com/hakonephp/untouchable-psr7/compare/1.0.2...1.1.0
