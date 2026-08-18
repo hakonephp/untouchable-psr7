@@ -9,10 +9,7 @@
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.9",
         "nyholm/psr7": "^1.8",
-        "php-http/discovery": "^1.20",
-        "phpstan/phpstan": "^2.0",
-        "phpstan/phpstan-strict-rules": "^2.0",
-        "symplify/easy-coding-standard": "^12.5"
+        "php-http/discovery": "^1.20"
     },
     "autoload": {
         "psr-4": {
